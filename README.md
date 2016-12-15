@@ -1,2 +1,3 @@
-# accordion
-# accordion
+# felds-accordion
+
+A vertical accordion web component.
