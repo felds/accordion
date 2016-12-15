@@ -1,0 +1,47 @@
+felds-accordion {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+felds-accordion > * {
+  flex: 1;
+}
+felds-accordion > * > * {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  felds-accordion {
+    overflow-x: hidden;
+    flex-direction: row;
+  }
+  felds-accordion > * {
+    position: relative;
+    height: 100%;
+  }
+  felds-accordion > * > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: left 100ms, width 100ms;
+    transition: left 100ms, width 100ms;
+    min-width: 100%;
+  }
+
+  felds-accordion > * > [open] {
+    left: calc((400px - 100%) / -2);
+    width: 400px;
+  }
+
+  felds-accordion > :first-child > [open] {
+    left: 0;
+  }
+
+  felds-accordion > :last-child > [open] {
+    left: calc((400px - 100%) / -1);
+  }
+}

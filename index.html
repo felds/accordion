@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>felds-accordion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  :root {
+    font: 16px/1.618 sans-serif;
+    box-sizing: border-box;
+  }
+  :root * {
+    box-sizing: inherit;
+  }
+
+  html, body {
+    background: whitesmoke;
+  }
+
+  .slide {
+    /*height: 100vh;*/
+  }
+
+  .container {
+    height: 80vh;
+    border: 1rem solid rebeccapurple;
+  }
+  .slide {
+    height: 100vh;
+  }
+
+  </style>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.23/webcomponents.min.js'></script>
+</head>
+
+<body translate="no" >
+  <div class="container">
+    <felds-accordion>
+      <div class="niche"> <div class="slide" style="background-color: tomato"></div> </div>
+      <div class="niche"> <div class="slide" style="background-color: gold"></div> </div>
+      <div class="niche"> <div class="slide" style="background-color: yellowgreen"></div> </div>
+      <div class="niche"> <div class="slide" style="background-color: dodgerblue"></div> </div>
+      <div class="niche"> <div class="slide" style="background-color: crimson"></div> </div>
+      <div class="niche"> <div class="slide" style="background-color: purple"></div> </div>
+      <div class="niche"> <div class="slide" style="background-color: orange"></div> </div>
+    </felds-accordion>
+  </div>
+
+  <link rel="import" href="accordion.html">
+</body>
+</html>
